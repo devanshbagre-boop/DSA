@@ -20,8 +20,7 @@ public:
 
     
         for (int i = 0; i < n; i++) {
-            int diff = prefmax[i] - suffmin[i];
-            if (diff <= k) {
+            if ( prefmax[i] - suffmin[i]<=k){
             return i; 
         }
     }
